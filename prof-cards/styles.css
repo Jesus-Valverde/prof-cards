@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+.profile-card {
+    margin: 20px;
+    padding: 10px;
+
+    background-color: #060047;
+    border-radius: 8px;
+
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.user {
+    margin: 20px;
+
+    background-color: #060047;
+    border-radius: 8px;
+
+    display: flex;
+    position: relative;
+    width: 300px;
+}
+
+.back-arrow {
+    border-radius: 50%;
+    width: 20px;
+    position: absolute;
+}
+
+.favorite{
+    width: 20px;
+    right: 30px;
+    position: absolute;
+}
+
+.more-vert{
+    width: 20px;
+    right: 5px;
+    position: absolute;
+}
+
+.user-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 2px 4px 10px black;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
