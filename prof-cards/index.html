@@ -1,41 +1,86 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="profile-card">
-        <header class="card-header">
-            <img class="back" src="icons/arrow.png" alt="back">
-            <nav>
-                <img class="favorite" src="icons/favorite.png" alt="favorite">
-                <img class="more" src="icons/more_vert.png" alt="more">
-            </nav>
-        </header>
-        <div class="user-container">
-            <div class="img-container">
-                <img class="user-pic" src="icons/user.webp" alt="user-picture">
-            </div>
-            <div class="user-data">
-                <h1 class="username">Veigar</h1>
-                <h2 class="role">Mago</h2>
-                <p class="description">El pequeño maestro del mal</p>
-                <button class="user-btn">Seleccionar</button>
-            </div>
-        </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-        <!--
-        <div class="user">
-            <img class="user-pic" src="icons/user.webp" alt="user-picture">
-        </div>
-        <div class="user-data">
-            <p class="username">Veigar</p>
-        </div>
-        -->
-    </div>
-</body>
-</html>
+body{
+    background-color: grey;
+}
+
+.profile-card {
+    background-color: #060047;
+    border-radius: 8px;
+    margin: 7px;
+    padding: 7px;
+    min-width: 100px;
+    height: 300px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back, .favorite, .more {
+    width: 20px;
+    height: 20px;
+}
+
+.user-container {
+    width: 100%;
+    height: 100%;
+}
+
+.user-pic, .user-data {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.user-pic {
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px black;
+}
+
+.username, .role, .description{
+    color: aliceblue;
+    margin: 4px;
+}
+
+.role {
+    color: darkgray;
+}
+
+.user-btn {
+    border-radius: 8px;
+}
+
+/*
+.user {
+    margin: 20px;
+
+    background-color: #060047;
+    border-radius: 8px;
+
+    display: flex;
+    position: relative;
+    width: 300px;
+}
+
+.user-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 2px 4px 10px black;
+}
+
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+*/
